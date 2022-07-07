@@ -1,11 +1,9 @@
 package com.crud.demo.Controller;
-
 import com.crud.demo.Service.EmployeeService;
 import com.crud.model.Employee;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -15,7 +13,7 @@ public class EmployeeController {
     private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
-        this.employeeService = employeeService;
+                this.employeeService = employeeService;
     }
 
     //alle employees doorzoeken

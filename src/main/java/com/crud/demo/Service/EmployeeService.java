@@ -23,14 +23,15 @@ public class EmployeeService {
     }
 
     // alle Employees opzoeken en terug geven
-
-    public List<Employee> findAllEmployees(){
+    public List<Employee> findAllEmployees() {
         return employeeRepository.findAll();
     }
+
     //employee updaten
     public Employee updateEmployee(Employee employee){
         return employeeRepository.save(employee);
     }
+
     //employee deleten
     public void deleteEmployee(Long id){
         employeeRepository.deleteEmployeeById(id);
